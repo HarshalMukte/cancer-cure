@@ -1,0 +1,134 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+.serviceLeft {
+  flex-basis: 20%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.serviceRight {
+  flex-basis: 80%;
+}
+.serviceLeft p {
+  font-size: 21px;
+  color: var(--theme-color);
+}
+.serviceLeft h2 {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 120%;
+  color: #000000;
+}
+.dots {
+  display: flex;
+  gap: 10px;
+}
+.dots span {
+  width: 10px;
+  height: 10px;
+  background: #dec8f4;
+  border-radius: 50%;
+}
+.dots span.active {
+  background-color: var(--theme-color);
+}
+.serviceBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+  border: 2px solid #121212;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  color: #121212;
+  background-color: #fff;
+  margin-top: auto;
+}
+.serviceBtn img {
+  width: 30px;
+  height: 30px;
+}
+.serviceRight {
+  background: #f4edfcbf;
+  border-radius: 50px;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #929292;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 15px;
+  height: 175px;
+}
+.card {
+  height: max-content;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 75px;
+  gap: 20px;
+  border-radius: 50px;
+  position: relative;
+}
+.card h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #121212;
+}
+.card p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  color: #606060;
+}
+.card button {
+  background: #121212;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+.card button img {
+  width: 40px;
+}
+.card.active {
+  background: #ffffff;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+}
+.card:not(.active) > p,
+.card:not(.active) > button {
+  opacity: 0;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+}

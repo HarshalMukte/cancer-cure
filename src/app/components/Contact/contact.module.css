@@ -1,0 +1,36 @@
+.wrapper {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  /* .background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+  .content {
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+  }
+  .content h2 {
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 120%;
+    color: #121212;
+    margin-bottom: 20px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+  }
+  .content p {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  color: #606060;
+  }

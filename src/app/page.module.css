@@ -1,0 +1,12 @@
+.mainWrapper{
+    position: relative;
+    max-width: 1366px;
+    background: #FFFFFF;
+    margin: auto;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}

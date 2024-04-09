@@ -1,0 +1,100 @@
+.wrapper {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.content {
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+}
+.content h2 {
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 120%;
+  color: #121212;
+  margin-bottom: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+}
+.content p {
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 120%;
+color: #606060;
+}
+.card {
+  display: flex !important;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.image {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.cardContent h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  color: #000000;
+}
+.cardContent p{
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 120%;
+color: #606060;
+margin-top: 10px;
+}
+.carouselBtn {
+  width: 100%;
+  padding: 16px 32px;
+  background: #954ddc;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+.specialize {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #606060;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.educations,
+.experiences {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #777777;
+}
+.educations img,
+.experiences img {
+  width: 24px;
+  height: 24px;
+}
