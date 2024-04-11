@@ -1,7 +1,5 @@
 import styles from "./experts.module.css"
 
-import React from 'react'
-
 const Experts = () => {
   const cardData = [
     {

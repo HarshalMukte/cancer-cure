@@ -7,10 +7,10 @@ const Footer = () => {
         <div className={styles.left}>
           <p className={styles.footerHeading}>About Us</p>
           <p className={styles.footerHeading}>Contact Us</p>
-          <p className={styles.footerPara}>Have questions or feedback? We're here to help! Feel free to reach out to our dedicated support team via email at <span><a href="#">cancercure@support.com</a></span> or give us a call at <span>+91 12345 67890</span>. We look forward to assisting you!</p>
+          <p className={styles.footerPara}>Have questions or feedback? We&apos;re here to help! Feel free to reach out to our dedicated support team via email at <span><a href="#">cancercure@support.com</a></span> or give us a call at <span>+91 12345 67890</span>. We look forward to assisting you!</p>
           <p className={styles.footerHeading}>FAQs</p>
-          <p className={styles.footerPara}>Got questions? We've got answers! Explore our frequently asked questions to find solutions to common queries about our app. If you don't find what you're looking for, don't hesitate to reach out to our support team for further assistance.</p>
-          <p className={styles.footerPara}>see people's question here : <span><a href="#">faqs.support.com</a></span></p>
+          <p className={styles.footerPara}>Got questions? We&apos;ve got answers! Explore our frequently asked questions to find solutions to common queries about our app. If you don&apos;t find what you&apos;re looking for, don&apos;t hesitate to reach out to our support team for further assistance.</p>
+          <p className={styles.footerPara}>see people&apos;s question here : <span><a href="#">faqs.support.com</a></span></p>
         </div>
         <div className={styles.middle}>
           <p className={styles.footerHeading}>Privacy Policy</p>
