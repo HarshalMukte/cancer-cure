@@ -6,39 +6,47 @@ import Experts from "./components/Experts/Experts";
 import Medicine from "./components/Medicine/Medicine";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
     <div className={styles.mainWrapper}>
       <Navbar />
       <div className={styles.sections}>
-        <section id="home">
+        <section className={styles.section} id="home">
           {/* Home section content */}
           <Home />
         </section>
 
-        <section id="service">
+        <section className={styles.section} id="service">
           {/* Service section content */}
           <Service />
         </section>
 
-        <section id="experts">
+        <section className={`${styles.section} ${styles.experts}`} id="experts">
           {/* Expert section content */}
           <Experts />
         </section>
-        <section id="medicine">
+        <section className={`${styles.section} ${styles.medicine}`} id="medicine">
           {/* Medicine section content */}
           <Medicine />
         </section>
 
-        <section id="about">
+        <section className={`${styles.section} ${styles.about}`} id="about">
           {/* About section content */}
           <About />
         </section>
 
-        <section id="contact">
+        <section className={`${styles.section} ${styles.contact}`} id="contact">
           {/* Contact section content */}
           <Contact />
+        </section>
+        <section className={`${styles.section} ${styles.banner}`}>
+          <Banner />
+        </section>
+        <section className={`${styles.section} ${styles.footer}`} >
+          <Footer />
         </section>
       </div>
     </div>

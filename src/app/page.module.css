@@ -10,3 +10,31 @@
     flex-direction: column;
     gap: 120px;
 }
+
+.section{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: var(--padding-value);
+    position: relative;
+  }
+  
+  .section.medicine{
+    background-color: #F4EDFC;
+    color: #954DDC;
+  }
+  /* for applying the background Image to the contact wrapper */
+  .section.contact{
+    background-image: url('/aboutAssets/back2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .section.banner{
+    min-height: 300px;
+    background-image: url("/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+ 

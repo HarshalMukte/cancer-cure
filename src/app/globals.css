@@ -31,29 +31,19 @@ a {
   text-decoration: none;
 }
 
+li{
+  list-style: none;
+}
+
 img{
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-section{
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  padding: var(--padding-value);
-  position: relative;
-}
-
-section#medicine{
-  background-color: #F4EDFC;
-  color: #954DDC;
-}
-section#contact{
-  background-image: url('/aboutAssets/back2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+button{
+  border: none;
+  outline: none;
 }
 
 
@@ -77,4 +67,26 @@ li.slick-active button:before {
 }
 .slick-next:before , .slick-prev:before{
   color: #000 !important;
+}
+
+/* customizing the scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2e015c;
 }
