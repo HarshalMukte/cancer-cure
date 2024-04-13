@@ -15,6 +15,11 @@
     gap: 80px;
   }
 }
+@media screen and (max-width: 520px) {
+  .sections{
+    gap: 50px;
+  }
+}
 
 .section{
     width: 100%;
