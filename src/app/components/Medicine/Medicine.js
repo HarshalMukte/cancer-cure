@@ -94,7 +94,7 @@ const Medicine = () => {
         }
       },
       {
-        breakpoint: 700,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -102,7 +102,7 @@ const Medicine = () => {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -118,7 +118,7 @@ const Medicine = () => {
         <p>Strengthen your immune system and reduce side effects by meeting body’s nutritional needs​​</p>
       </div>
       <div className={styles.medicineMenu}>
-        <ul className={styles.menuItmes}>
+        <ul className={styles.menuItems}>
           <li className={`${styles.listItem} ${styles.active}`}>All</li>
           <li className={styles.listItem}>Daily Use supplements</li>
           <li className={styles.listItem}>Supplements</li>
@@ -134,8 +134,8 @@ const Medicine = () => {
             <div className={styles.image}>
               <Image width={400} height={400} src={card.imgLink} alt="image" />
             </div>
-            <div className={styles.title}>
-              <h2>{card.title}</h2>
+            <div>
+              <h2 className={styles.title}>{card.title}</h2>
             </div>
             <ul className={styles.lists}>
              {

@@ -24,7 +24,7 @@ const Home = () => {
                 <img src="./homeAssets/1.png" alt="image" />
                   <div className={styles.numbers}>
                     <p>10k+</p>
-                  <span>Patients guided</span>
+                    <span>Patients guided</span>
                   </div>
                 </div>
                 <div className={styles.imgWra}>
@@ -35,15 +35,27 @@ const Home = () => {
                   </div>
                 </div>
                 <div className={styles.circleEye}>
-            <img src="./homeAssets/5.png" alt="image" />
-          </div>
+                      <img src="./homeAssets/5.png" alt="image" />
+                </div>
               </div>
               <div className={styles.right}>
+                <div className={styles.imgWra}>
                 <img src="./homeAssets/3.png" alt="image" />
+                      <div className={styles.numbers}>
+                    <p>10k+</p>
+                    <span>Patients guided</span>
+                  </div>
+                  </div>
               </div>
           </div>
           <div className={styles.bottom}>
+            <div className={styles.imgWra}>
             <img src="./homeAssets/4.png" alt="image" />
+                      <div className={styles.numbers}>
+                      <p>75%</p>
+                  <span>Side Effects Reduced</span>
+                  </div>
+                  </div>
           </div>
         </div>
       </div>

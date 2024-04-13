@@ -12,7 +12,7 @@ font-style: normal;
 }
 .content h2 {
   font-weight: 500;
-  font-size: 47px;
+  font-size: var(--title-font-size);
   line-height: 120%;
   color: #121212;
   margin-bottom: 20px;
@@ -32,7 +32,7 @@ font-style: normal;
   background: #ffffff;
   border-radius: 25px;
 }
-.menuItmes {
+.menuItems {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,12 +40,17 @@ font-style: normal;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 .listItem {
   list-style: none;
   padding: 2px 10px;
   position: relative;
   cursor: pointer;
+  text-wrap: nowrap;
 }
 .listItem::after {
   content: "";
@@ -68,7 +73,6 @@ font-style: normal;
     flex-direction: column;
     gap: 25px;
 }
-
 .image{
     border-radius: 25px;
     overflow: hidden;
@@ -76,11 +80,11 @@ font-style: normal;
 }
 .title{ 
 font-weight: 500;
-font-size: 16px;
 color: #121212;
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
-
+font-size: 21px;
+line-height: 120%;
 }
 .carouselBtn{
 width: 100%;
@@ -101,4 +105,29 @@ font-size: 16px;
 line-height: 120%;
 color: #929292;
 padding-left: 15PX;
+}
+
+/* customizing the scrollbar for medicine menu*/
+.menuItems::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .title{
+    font-size: 18px;
+  }
+  .content p{
+    font-size: 16px;
+  }
+  .card .lists{
+    font-size: 14px;
+  }
+  .carouselBtn{
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+  .menuItems {
+    padding-bottom: 20px;
+  }
 }

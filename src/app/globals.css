@@ -9,7 +9,20 @@
   --padding-value: 30px 60px;
   --nav-height: 85px;
   --theme-color: #954DDC;
+  --title-font-size: 47px;
 }
+@media (max-width: 1150px) {
+  :root {
+    --title-font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --padding-value: 20px 25px;
+    --title-font-size: 38px;
+  }
+}
+
 
 html,
 body {
@@ -68,6 +81,17 @@ li.slick-active button:before {
 .slick-next:before , .slick-prev:before{
   color: #000 !important;
 }
+/* media queries for slider*/
+@media screen and (max-width: 768px) {
+  .slick-next{
+    right: 0px !important;
+    scale: 2.5 !important;
+  }
+  .slick-prev{
+    left: 0px !important;
+    scale: 2.5 !important; 
+  }
+}
 
 /* customizing the scrollbar */
 /* width */
@@ -90,3 +114,6 @@ li.slick-active button:before {
 ::-webkit-scrollbar-thumb:hover {
   background: #2e015c;
 }
+
+
+

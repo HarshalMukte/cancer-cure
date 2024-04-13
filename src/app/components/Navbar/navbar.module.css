@@ -48,6 +48,7 @@
   display: block;
   padding: 10px;
   position: relative;
+  text-align: center;
 }
 .links a:hover::after,
 .links a.active::after {
@@ -55,4 +56,113 @@
 }
 .links a.active {
   font-weight: 600;
+}
+
+/* for menu bar */
+.menuIcon {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+
+  /* for menu */
+  display: none;
+  opacity: 0;
+  cursor: none;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin: 3px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.menuIcon.open{
+  position: fixed;
+  right: 40px;
+  top: 40px;
+}
+.menuIcon.open .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menuIcon.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menuIcon.open .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* media query break points */
+@media screen and (max-width: 900px) {
+  /* for menu bar */
+ .menuIcon {
+  display: flex;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 101;
+ }
+ .links{
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+ }
+ .loginBtn{
+  margin-left: auto;
+ }
+ .navbar{
+   justify-content: flex-start;
+  }
+  .links.linkActive{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #b670fc, #d8d8d8);
+    z-index: 100;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 40px;
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 35px;
+  }
+  .loginBtn {
+    padding: 8px 18px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logo {
+    height: 25px;
+  }
+  .loginBtn {
+    padding: 6px 14px;
+  }
+  .menuIcon {
+    width: 25px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .logo {
+    height: 25px;
+  }
+  .loginBtn {
+    padding: 4px 10px;
+  }
 }

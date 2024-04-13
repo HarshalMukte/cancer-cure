@@ -106,7 +106,7 @@ const About = () => {
         }
       },
       {
-        breakpoint: 700,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -114,7 +114,7 @@ const About = () => {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

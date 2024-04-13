@@ -10,6 +10,11 @@
     flex-direction: column;
     gap: 120px;
 }
+@media screen and (max-width: 767px) {
+  .sections{
+    gap: 80px;
+  }
+}
 
 .section{
     width: 100%;
@@ -24,11 +29,12 @@
   }
   /* for applying the background Image to the contact wrapper */
   .section.contact{
-    background-image: url('/aboutAssets/back2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-color: var(--theme-color);
+    background-image: url('/aboutAssets/back2.png');
   }
   .section.banner{
     min-height: 300px;
@@ -37,4 +43,11 @@
     background-position: center;
     background-size: cover;
   }
+
+  /* media query */
+@media screen and (max-width: 768px) {
+  .section.contact{
+    height: auto;
+  }
+}
  

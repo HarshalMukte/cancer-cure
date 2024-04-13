@@ -19,7 +19,7 @@
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 15.6521px;
+font-size: 16px;
 line-height: 20px;
 text-transform: capitalize;
 color: #121212;
@@ -28,7 +28,7 @@ color: #121212;
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 9.96042px;
+font-size: 10px;
 line-height: 13px;
 text-align: justify;
 text-transform: capitalize;
@@ -42,7 +42,7 @@ color: #606060;
 font-family: 'Plus Jakarta Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 9.96042px;
+font-size: 10px;
 line-height: 13px;
 text-align: justify;
 text-transform: capitalize;
@@ -57,8 +57,26 @@ line-height: 16px;
 text-align: justify;
 text-transform: capitalize;
 color: #121212;
+text-align: center;
 }
 .footerCopyRight span{
     font-weight: 800;
     color: #000;
+}
+
+/* media query */
+@media screen and (max-width: 550px) {
+    .contentWrapper{
+        gap: 20px;
+    }
+    .footerHeading{
+        font-size: 14px;
+    }
+    .footerPara{
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .left, .right, .middle{
+        gap: 10px;
+    }
 }

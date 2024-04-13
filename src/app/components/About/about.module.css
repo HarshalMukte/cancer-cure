@@ -12,7 +12,7 @@
 }
 .content h2 {
   font-weight: 500;
-  font-size: 47px;
+  font-size: var(--title-font-size);
   line-height: 120%;
   color: #121212;
   margin-bottom: 20px;
@@ -97,4 +97,26 @@ margin-top: 10px;
 .experiences img {
   width: 24px;
   height: 24px;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .content p{
+    font-size: 16px;
+  }
+  .cardContent h2 {
+    font-size: 18px;
+  }
+  .cardContent p{
+    font-size: 14px;
+  }
+  .carouselBtn{
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+  .educations,
+.experiences {
+  font-size: 12px;
+
+  }
 }

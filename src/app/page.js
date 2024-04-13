@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 export default function App() {
   return (
@@ -43,12 +44,15 @@ export default function App() {
           <Contact />
         </section>
         <section className={`${styles.section} ${styles.banner}`}>
+          {/* Banner section content */}
           <Banner />
         </section>
         <section className={`${styles.section} ${styles.footer}`} >
+          {/* Footer section content */}
           <Footer />
         </section>
       </div>
+      <ScrollUp />
     </div>
   );
 }
