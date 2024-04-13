@@ -110,7 +110,9 @@ const Navbar = () => {
         </motion.li>
       </ul>
       <motion.button className={styles.loginBtn} variants={item}>Login</motion.button>
+      <motion.div variants={item}>
       <AnimatedMenuIcon isOpen={isOpen} toggleMenu={toggleMenu} />
+      </motion.div>
     </motion.nav>
   );
 };

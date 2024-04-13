@@ -10,6 +10,7 @@ import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 
+
 export default function App() {
   return (
     <div className={styles.mainWrapper}>
