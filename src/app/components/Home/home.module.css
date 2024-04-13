@@ -43,7 +43,7 @@
   border-radius: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
   padding: 8px;
 }
@@ -209,6 +209,9 @@
   }
   .mailBtn {
     padding: 10px 18px;
+  }
+  .mailSection {
+    width: 100%;
   }
 }
 @media screen and (max-width: 350px){
