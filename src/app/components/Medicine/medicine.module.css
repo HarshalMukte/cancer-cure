@@ -96,7 +96,13 @@ font-size: 21px;
 line-height: 120%;
 color: #FFFFFF;
 outline: none;
-border: none;
+}
+.carouselBtn::before{
+  background-color: #fff;
+}
+.carouselBtn:hover{
+  color: #954DDC;
+  border-color: #954DDC;
 }
 .card .lists{
 font-style: normal;

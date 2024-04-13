@@ -2,6 +2,29 @@
 import { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
 import AnimatedMenuIcon from "./AnimatedMenu";
+import { motion } from "framer-motion";
+
+//framer motion varients
+const container = {
+  show: {
+    transition: {
+      // delayChildren: 1.35,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: -200 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "easeOut",
+      duration: .5,
+    },
+  },
+};
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#home");
@@ -13,20 +36,25 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    setActiveNav("#home")
   }, [activeNav])
   
 
   return (
-    <nav className={styles.navbar}>
-      <a
+    <motion.nav className={styles.navbar}
+    variants={container}
+    initial="hidden"
+    animate="show">
+      <motion.a
         href="#home"
         className={styles.logo}
         onClick={() => setActiveNav("#home")}
+        variants={item}
       >
         <img src="./icon.png" alt="logoImage" />
-      </a>
+      </motion.a>
       <ul className={`${styles.links} ${isOpen ? styles.linkActive : ""}`}>
-        <li className={styles.link}>
+        <motion.li className={styles.link} variants={item}>
           <a
             href="#home"
             className={activeNav === "#home" ? styles.active : ""}
@@ -34,8 +62,8 @@ const Navbar = () => {
           >
             Home
           </a>
-        </li>
-        <li className={styles.link}>
+        </motion.li>
+        <motion.li className={styles.link} variants={item}>
           <a
             href="#service"
             className={activeNav === "#service" ? styles.active : ""}
@@ -43,8 +71,8 @@ const Navbar = () => {
           >
             Services
           </a>
-        </li>
-        <li className={styles.link}>
+        </motion.li>
+        <motion.li className={styles.link} variants={item}>
           <a
             href="#experts"
             className={activeNav === "#experts" ? styles.active : ""}
@@ -52,8 +80,8 @@ const Navbar = () => {
           >
             Experts
           </a>
-        </li>
-        <li className={styles.link}>
+        </motion.li>
+        <motion.li className={styles.link} variants={item}>
           <a
             href="#medicine"
             className={activeNav === "#medicine" ? styles.active : ""}
@@ -61,8 +89,8 @@ const Navbar = () => {
           >
             Medicine
           </a>
-        </li>
-        <li className={styles.link}>
+        </motion.li>
+        <motion.li className={styles.link} variants={item}>
           <a
             href="#about"
             className={activeNav === "#about" ? styles.active : ""}
@@ -70,8 +98,8 @@ const Navbar = () => {
           >
             About Us
           </a>
-        </li>
-        <li className={styles.link}>
+        </motion.li>
+        <motion.li className={styles.link} variants={item}>
           <a
             href="#contact"
             className={activeNav === "#contact" ? styles.active : ""}
@@ -79,11 +107,11 @@ const Navbar = () => {
           >
             Contact Us
           </a>
-        </li>
+        </motion.li>
       </ul>
-      <button className={styles.loginBtn}>Login</button>
+      <motion.button className={styles.loginBtn} variants={item}>Login</motion.button>
       <AnimatedMenuIcon isOpen={isOpen} toggleMenu={toggleMenu} />
-    </nav>
+    </motion.nav>
   );
 };
 

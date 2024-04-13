@@ -72,6 +72,8 @@ button{
 .slick-dots li button:before {
   font-size: 10px !important;
   color: #af6bf4 !important;
+  scale: 1 !important;
+  background-color: transparent !important;
 }
 li.slick-active button:before {
   color: var(--theme-color)!important;
@@ -81,6 +83,8 @@ li.slick-active button:before {
 .slick-next:before , .slick-prev:before{
   color: #000 !important;
 }
+
+
 /* media queries for slider*/
 @media screen and (max-width: 768px) {
   .slick-next{
@@ -117,3 +121,39 @@ li.slick-active button:before {
 
 
 
+/* customizing the buttons */
+button{
+  position: relative;
+  overflow: hidden;
+  box-shadow: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+}
+button::before{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  scale: 0;
+  background-color: #954DDC;
+  transition: all .3s;
+  width: 150%;
+  aspect-ratio: 1/1;
+    pointer-events: none;
+    z-index: -1;
+}
+button:hover::before{
+  scale: 1;
+}
+button:hover{
+  color: #fff;
+  border-color: #954DDC;
+}
+button:hover > img{
+  filter: invert(1);
+}

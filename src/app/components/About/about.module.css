@@ -36,7 +36,7 @@ color: #606060;
 .image {
   border-radius: 25px;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: #d5aaff;
 }
 .cardContent h2 {
   font-family: "Plus Jakarta Sans";
@@ -65,7 +65,13 @@ margin-top: 10px;
   line-height: 120%;
   color: #ffffff;
   outline: none;
-  border: none;
+}
+.carouselBtn::before{
+  background-color: #fff;
+}
+.carouselBtn:hover{
+  color: #954DDC;
+  border-color: #954DDC;
 }
 .specialize {
   font-family: "Plus Jakarta Sans";

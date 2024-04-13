@@ -1,44 +1,47 @@
-.scrollUpBtn{
-    position: fixed;
-    right: 50px;
-    bottom: -20%;
-    border-radius: 10px;
-    background-color: var(--theme-color);
-    border: none;
-    outline: none;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 10px 12px;
-    transform: translateY(-5);
-    box-shadow: 0px 8px 24px #b186dbb0;
-    z-index: 1000;
-    transition: .3s;
-    animation: float 2s ease-in-out infinite alternate-reverse;
+.scrollUpBtn {
+  position: fixed;
+  right: 50px;
+  bottom: -20%;
+  border-radius: 10px;
+  background-color: var(--theme-color);
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px 12px;
+  transform: translateY(-5);
+  box-shadow: 0px 8px 24px #b186dbb0;
+  z-index: 1000;
+  transition: 0.3s;
+  animation: float 2s ease-in-out infinite alternate-reverse;
 }
-.scrollUpBtn img{
-    pointer-events: none;
+.scrollUpBtn img {
+  pointer-events: none;
 }
-.scrollVisible{
-    opacity: 1;
-    bottom: 5%;
+.scrollUpBtn::before {
+  background-color: #fff;
 }
-
-.scrollUpBtn:hover{
-    background-color: #2d0654;
+.scrollUpBtn:hover {
+  color: #954ddc;
+  border-color: #954ddc;
+}
+.scrollVisible {
+  opacity: 1;
+  bottom: 5%;
 }
 
 @keyframes float {
-    0%{
-        transform: translateY(-5px);
-    }
-    100%{
-        transform: translateY(5px);
-    }
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 @media screen and (max-width: 550px) {
-    .scrollUpBtn{
-        right: 15px;
-        padding: 4px 6px;
-    }
+  .scrollUpBtn {
+    right: 15px;
+    padding: 4px 6px;
+  }
 }

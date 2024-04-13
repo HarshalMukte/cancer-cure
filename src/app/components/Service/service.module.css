@@ -41,7 +41,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   gap: 10px;
   border: 2px solid #121212;
   border-radius: 50px;
@@ -121,6 +121,9 @@
 .card button img {
   width: 40px;
 }
+.card button:hover > img{
+  filter: invert(0);
+}
 .card.active {
   background: #ffffff;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
@@ -194,8 +197,6 @@
   .card {
     padding: 10px;
     flex-basis: 100%;
-  }
-  .card.active {
   }
   .text {
     font-size: 16px;

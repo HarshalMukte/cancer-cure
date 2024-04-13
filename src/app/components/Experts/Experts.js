@@ -1,4 +1,26 @@
+"use client"
 import styles from "./experts.module.css"
+import { motion } from "framer-motion"
+
+//framer motion varients
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+const motionItem = {
+  hidden: { opacity: 0, x: -200 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      ease: "easeOut",
+      duration: 0.5,
+    },
+  },
+};
 
 const Experts = () => {
   const cardData = [
@@ -45,12 +67,17 @@ const Experts = () => {
           <p className={styles.heading}>Other Programs</p>
           <p className={styles.para}>Our  programs provide you full support so that you can focus on your healing & recovery</p>
         </div>
-        <div className={styles.cards}>
+        <motion.div className={styles.cards} 
+        variants={container}
+        initial="hidden"
+        whileInView="show">
 
           {
             cardData.map((item, index) => {
               return (
-                <div  key={item?.id || (index + 1)} className={styles.card}>
+                <motion.div key={item?.id || (index + 1)} className={styles.card}
+                 variants={motionItem}
+                >
                   <div className={styles.image}>
                     <img src={item.img} alt="image" />
                   </div>
@@ -63,11 +90,11 @@ const Experts = () => {
                       <img src="./programAssets/arrowWhite.png" alt="image" />
                     </button>
                   </div>
-                </div>
+                </motion.div>
               )
             })
           }
-        </div>
+        </motion.div>
     </div>
   )
 }

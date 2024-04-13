@@ -66,12 +66,17 @@
   border-radius: 50px;
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  aspect-ratio: 1 / 1;
   border: none;
   outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
+}
+.card button:hover > img{
+  filter: invert(0);
 }
 .card button img {
   width: 40px;
