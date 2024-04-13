@@ -15,7 +15,9 @@
     transition: .3s;
     animation: float 2s ease-in-out infinite alternate-reverse;
 }
-
+.scrollUpBtn img{
+    pointer-events: none;
+}
 .scrollVisible{
     opacity: 1;
     bottom: 5%;
@@ -31,5 +33,12 @@
     }
     100%{
         transform: translateY(5px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .scrollUpBtn{
+        right: 15px;
+        padding: 4px 6px;
     }
 }

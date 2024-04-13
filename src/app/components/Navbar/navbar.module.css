@@ -131,8 +131,8 @@
     background: linear-gradient(to bottom, #b670fc, #d8d8d8);
     z-index: 100;
     flex-direction: column;
-    gap: 35px;
-    font-size: 40px;
+    gap: 25px;
+    font-size: 35px;
     display: flex;
     opacity: 1;
     pointer-events: all;
