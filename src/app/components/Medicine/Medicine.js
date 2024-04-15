@@ -125,6 +125,14 @@ const Medicine = () => {
           <li className={styles.listItem}>Ayurveda</li>
           <li className={styles.listItem}>Medical cannabis</li>
         </ul>
+        <select name="menuItems" id="menuItems" className={styles.mobileMenuItems}>
+          <option value="All" selected>All</option>
+          <option value="Daily Use supplements">Daily Use supplements</option>
+          <option value="Supplements">Supplements</option>
+          <option value="Ayurveda">Ayurveda</option>
+          <option value="Medical cannabis">Medical cannabis</option>
+        </select>
+        <span className={styles.menuBorder}></span>
       </div>
       <div className={styles.medicineCarousel}>
       <Slider {...carouselSettings}>
