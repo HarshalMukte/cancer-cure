@@ -12,7 +12,7 @@ const Service = () => {
 
     if (!isHovered) {
       interval = setInterval(() => {
-        setNumber((prevNumber) => prevNumber === 4 ? 1 : prevNumber + 1);
+        // setNumber((prevNumber) => prevNumber === 4 ? 1 : prevNumber + 1);
       }, 1500);
     }
 

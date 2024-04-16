@@ -116,9 +116,10 @@ color: #929292;
 padding-left: 15PX;
 }
 .mobileMenuItems{
-  width: 100%;
+    width: 100%;
     border: none;
     outline: none;
+    background-color: transparent;
     font-size: 18px;
     position: relative;
     display: none;
