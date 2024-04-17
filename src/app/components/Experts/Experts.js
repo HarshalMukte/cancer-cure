@@ -71,7 +71,6 @@ const Experts = () => {
         variants={container}
         initial="hidden"
         whileInView="show">
-
           {
             cardData.map((item, index) => {
               return (

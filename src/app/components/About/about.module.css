@@ -37,6 +37,13 @@ color: #606060;
   border-radius: 25px;
   overflow: hidden;
   background-color: #d5aaff;
+  position: relative;
+}
+.image:hover img{
+  scale: 1.1;
+}
+.image img{
+  transition: scale .2s;
 }
 .cardContent h2 {
   font-family: "Plus Jakarta Sans";

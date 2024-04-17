@@ -80,7 +80,15 @@ font-style: normal;
     border-radius: 25px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
+    position: relative;
 }
+.image:hover img{
+  scale: 1.1;
+}
+.image img{
+  transition: scale .2s;
+}
+
 .title{ 
 font-weight: 500;
 color: #121212;
